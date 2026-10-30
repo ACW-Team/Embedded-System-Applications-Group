@@ -1,5 +1,4 @@
 # Embedded-System-Applications-Group
-Embedded System Applications Group work
 
 Heating Control System with Alarm (Group or Individual Project)
 Assignment Overview
@@ -45,39 +44,42 @@ What Your System Should Do
 
 Your system must integrate sensing, control, and user interaction on the PIC18F45K22 (EasyPIC7A) board. It should run continuously, with all features operating together in real time. Functions must not pause or block each other. Use interrupts, timers, or efficient non-blocking loops to keep every feature responsive.
 
-    Measure the Temperature (LM35 Sensor)
-        Use the LM35 sensor connected to AN6/RE1 for analogue temperature measurement.
-        Convert the ADC voltage to temperature in °C using correct calibration and scaling.
-        Continuously update the measured value on both the 4-digit seven-segment display and the LCD, without flicker or delay.
-        Display refresh should be smooth and concurrent with other system functions.
-    Control the Heating (LED Indicator)
-        Use an LED to show when the heating output is ON or OFF. The LED is only an indicator; it does not heat the room.
-        Use two adjustable target temperatures: Day (for example 24 °C) and Night (for example 18 °C). Use the RTC to select the active mode. Turn the LED ON below the active target and OFF at or above it, but only when heating is enabled and within the heating window.
-        Both target temperatures and the times when Day and Night modes start must be adjustable in the menu. Show the active mode on the LCD or in the status menu.
-        Heating logic must continue to operate while other functions (menu, alarm, display updates) are running.
-    Real-Time Clock (RTC)
-        Use an external RTC module such as the Click16 board to maintain accurate time.
-        Implement a heating window (for example 06:30–08:00) during which heating can operate. The selected Day or Night target applies only while heating is allowed.
-        Show the current time and date on the LCD. They must be updated from the RTC while the system runs.
-        Show the set alarm time in the menu. Allow the user to set the RTC time and date and the Day/Night changeover times using the buttons.
-        The RTC should keep time independently, without interrupting other tasks.
-    Menu and Buttons (User Interface)
-        The system must not rely on hard-coded values.
-        Use the menu to change:
-        • Day target temperature and Night target temperature
-        • Current RTC time and date
-        • Day and Night changeover times
-        • Heating window start and end times
-        • Alarm time and tone
-        • Heating and alarm ON/OFF settings
-        The menu must be accessible at any time without stopping other running processes.
-        Buttons must be debounced in software, and logic should allow smooth navigation between menu items.
-        Use timers or flags instead of blocking delays so the system remains responsive.
+## Measure the Temperature (LM35 Sensor)
+    Use the LM35 sensor connected to AN6/RE1 for analogue temperature measurement.
+    Convert the ADC voltage to temperature in °C using correct calibration and scaling.        Continuously update the measured value on both the 4-digit seven-segment display and the LCD, without flicker or delay.
+    Display refresh should be smooth and concurrent with other system functions.
+    
+
+## Control the Heating (LED Indicator)
+    Use an LED to show when the heating output is ON or OFF. The LED is only an indicator; it does not heat the room.
+    Use two adjustable target temperatures: Day (for example 24 °C) and Night (for example 18 °C). Use the RTC to select the active mode. Turn the LED ON below the active target and OFF at or above it, but only when heating is enabled and within the heating window.
+    Both target temperatures and the times when Day and Night modes start must be adjustable in the menu. Show the active mode on the LCD or in the status menu.        Heating logic must continue to operate while other functions (menu, alarm, display updates) are running.
+
+## Real-Time Clock (RTC)
+    Use an external RTC module such as the Click16 board to maintain accurate time.
+    Implement a heating window (for example 06:30–08:00) during which heating can operate. The selected Day or Night target applies only while heating is allowed.        Show the current time and date on the LCD. They must be updated from the RTC while the system runs.
+    Show the set alarm time in the menu. Allow the user to set the RTC time and date and the Day/Night changeover times using the buttons.
+    The RTC should keep time independently, without interrupting other tasks.
+
+## Menu and Buttons (User Interface)
+    The system must not rely on hard-coded values.
+    Use the menu to change:
+    Day target temperature and Night target temperature
+    Current RTC time and date
+    Day and Night changeover times
+    Heating window start and end times
+    Alarm time and tone
+    Heating and alarm ON/OFF settings
+    The menu must be accessible at any time without stopping other running processes.
+    Buttons must be debounced in software, and logic should allow smooth navigation between menu items.
+    Use timers or flags instead of blocking delays so the system remains responsive.
+
     EEPROM (Save Settings)
         All user settings must be stored in EEPROM and reloaded on startup.
         Demonstrate that data persists after a full power cycle.
-        Explain which EEPROM addresses hold each saved setting, such as Day/Night target temperatures, changeover times, heating window and alarm settings. The current time and date are kept by the RTC.
+     Explain which EEPROM addresses hold each saved setting, such as Day/Night target temperatures, changeover times, heating window and alarm settings. The current time and date are kept by the RTC.
         EEPROM operations should occur without freezing other parts of the system (for example, using non-blocking read/write).
+
     Alarm and Buzzer
         The system must play a tone or melody at the programmed alarm time while maintaining other functions (temperature display, RTC update, LED control).
         Alarm must last at least 1–2 seconds using timer-based or interrupt-driven logic, not delay loops.
