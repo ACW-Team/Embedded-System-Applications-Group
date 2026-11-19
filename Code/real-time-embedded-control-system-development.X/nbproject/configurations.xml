@@ -10,7 +10,7 @@
       <itemPath>lcd-display.h</itemPath>
       <itemPath>buzzer.h</itemPath>
       <itemPath>rtc-clock.h</itemPath>
-      <itemPath>eeprom_cfg.h</itemPath>
+      <itemPath>eeprom-cfg.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -30,8 +30,8 @@
       <itemPath>lcd-display.c</itemPath>
       <itemPath>buzzer.c</itemPath>
       <itemPath>rtc-clock.c</itemPath>
-      <itemPath>eeprom_cfg.c</itemPath>
       <itemPath>main.c</itemPath>
+      <itemPath>eeprom-cfg.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>

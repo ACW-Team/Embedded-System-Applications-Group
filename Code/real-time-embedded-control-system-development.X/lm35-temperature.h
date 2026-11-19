@@ -18,14 +18,18 @@
 
 // This is a guard condition so that contents of this file are not included
 // more than once.  
-#ifndef XC_HEADER_TEMPLATE_H
-#define	XC_HEADER_TEMPLATE_H
+#ifndef LM35_TEMPERATURE_H
+#define	LM35_TEMPERATURE_H
 
 #include <xc.h> // include processor files - each processor file is guarded.  
 
 // TODO Insert appropriate #include <>
 
+
 // TODO Insert C++ class definitions if appropriate
+void lm35_init(void);
+
+void lm35_start_sample(void);
 
 // TODO Insert declarations
 
@@ -64,5 +68,5 @@ extern "C" {
 }
 #endif /* __cplusplus */
 
-#endif	/* XC_HEADER_TEMPLATE_H */
+#endif	/* LM35_TEMPERATURE_H */
 
