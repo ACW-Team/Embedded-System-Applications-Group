@@ -11,26 +11,26 @@
 
 
 // Configuration settings from the Week 5 lab.
-#pragma config FOSC = HSMP          // External crystal oscillator, 4?16 MHz range.
-#pragma config PLLCFG = OFF         // Use the board's 8 MHz crystal without the 4x PLL.
-#pragma config PRICLKEN = ON        // Enable the primary oscillator.
-#pragma config FCMEN = OFF          // Disable the fail-safe clock monitor.
-#pragma config IESO = OFF           // Disable automatic oscillator switching.
-#pragma config PWRTEN = OFF         // Disable the power-up timer.
-#pragma config BOREN = OFF          // Disable brown-out reset.
-#pragma config WDTEN = OFF          // Disable the watchdog timer.
-#pragma config PBADEN = OFF         // Start PORTB pins in digital mode.
-#pragma config MCLRE = INTMCLR      // Use the internal master clear.
-#pragma config LVP = OFF            // Disable low-voltage programming.
+#pragma config FOSC = HSMP // External crystal oscillator, 4?16 MHz range.
+#pragma config PLLCFG = OFF // Use the board's 8 MHz crystal without the 4x PLL.
+#pragma config PRICLKEN = ON // Enable the primary oscillator.
+#pragma config FCMEN = OFF // Disable the fail-safe clock monitor.
+#pragma config IESO = OFF  // Disable automatic oscillator switching.
+#pragma config PWRTEN = OFF // Disable the power-up timer.
+#pragma config BOREN = OFF // Disable brown-out reset.
+#pragma config WDTEN = OFF // Disable the watchdog timer.
+#pragma config PBADEN = OFF // Start PORTB pins in digital mode.
+#pragma config MCLRE = INTMCLR // Use the internal master clear.
+#pragma config LVP = OFF // Disable low-voltage programming.
 
 static void timer2_init(void)
 {
-    T2CON = 0;                 // Stop Timer2 and select a 1:1 postscaler.
-    T2CONbits.T2CKPS = 2;      // Select the 1:16 prescaler.
-    TMR2 = 0;                  // Start counting from zero.
-    PR2 = 124;                 // Count 125 timer steps per tick.
-    PIR1bits.TMR2IF = 0;       // Clear any previous tick.
-    T2CONbits.TMR2ON = 1;      // Start Timer2.
+    T2CON = 0; // Stop Timer2 and select a 1:1 postscaler.
+    T2CONbits.T2CKPS = 2; // Select the 1:16 prescaler.
+    TMR2 = 0; // Start counting from zero.
+    PR2 = 124; // Count 125 timer steps per tick.
+    PIR1bits.TMR2IF = 0; // Clear any previous tick.
+    T2CONbits.TMR2ON = 1; // Start Timer2.
 }
 
 void main(void)
