@@ -20,8 +20,8 @@
  */
 
 /* 
- * File:   
- * Author: 
+ * File: seven-segment-display
+ * Author: Wiktor
  * Comments:
  * Revision history: 
  */

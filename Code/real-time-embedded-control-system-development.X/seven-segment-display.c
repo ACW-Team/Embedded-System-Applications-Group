@@ -1,6 +1,6 @@
 /*
  * File:   seven-segment-display.c
- * Author: reece
+ * Author: Wiktor
  *
  * Created on November 16, 2026, 3:53 PM
  */

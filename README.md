@@ -49,17 +49,23 @@ Your system must integrate sensing, control, and user interaction on the PIC18F4
     Convert the ADC voltage to temperature in °C using correct calibration and scaling.        Continuously update the measured value on both the 4-digit seven-segment display and the LCD, without flicker or delay.
     Display refresh should be smooth and concurrent with other system functions.
     
+# How it works:
+
 
 ## Control the Heating (LED Indicator)
     Use an LED to show when the heating output is ON or OFF. The LED is only an indicator; it does not heat the room.
     Use two adjustable target temperatures: Day (for example 24 °C) and Night (for example 18 °C). Use the RTC to select the active mode. Turn the LED ON below the active target and OFF at or above it, but only when heating is enabled and within the heating window.
     Both target temperatures and the times when Day and Night modes start must be adjustable in the menu. Show the active mode on the LCD or in the status menu.        Heating logic must continue to operate while other functions (menu, alarm, display updates) are running.
 
+# How it works:
+
 ## Real-Time Clock (RTC)
     Use an external RTC module such as the Click16 board to maintain accurate time.
     Implement a heating window (for example 06:30–08:00) during which heating can operate. The selected Day or Night target applies only while heating is allowed.        Show the current time and date on the LCD. They must be updated from the RTC while the system runs.
     Show the set alarm time in the menu. Allow the user to set the RTC time and date and the Day/Night changeover times using the buttons.
     The RTC should keep time independently, without interrupting other tasks.
+
+# How it works:
 
 ## Menu and Buttons (User Interface)
     The system must not rely on hard-coded values.
@@ -85,6 +91,8 @@ Your system must integrate sensing, control, and user interaction on the PIC18F4
         Alarm must last at least 1–2 seconds using timer-based or interrupt-driven logic, not delay loops.
         Provide at least two selectable tones or melodies.
         Users must be able to enable, disable, or silence the alarm through the menu.
+
+# How it works:
 
 Suggested File Structure
 | Function | Example Files |

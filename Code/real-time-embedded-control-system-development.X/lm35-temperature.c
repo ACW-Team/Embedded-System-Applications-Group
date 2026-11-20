@@ -7,6 +7,7 @@ Measure the Temperature (LM35 Sensor)
     Display refresh should be smooth and concurrent with other system functions.
 
  * Notes
+ * 
  */
 
 
