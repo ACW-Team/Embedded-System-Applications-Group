@@ -2,7 +2,7 @@
 Measure the Temperature (LM35 Sensor)
 
     Use the LM35 sensor connected to AN6/RE1 for analogue temperature measurement.
-    Convert the ADC voltage to temperature in °C using correct calibration and scaling.
+    Convert the ADC voltage to temperature in ?C using correct calibration and scaling.
     Continuously update the measured value on both the 4-digit seven-segment display and the LCD, without flicker or delay.
     Display refresh should be smooth and concurrent with other system functions.
 
@@ -25,8 +25,8 @@ void lm35_init(void) {
     
     // Set result format and sapling on the 8Mhz clock
     ADCON2bits.ADFM = 1; // Right align with 10-bit ADC result
-    ADCON2bits.ADCS = 5; //Fosc/16 gives 2 µs ADC clock period
-    ADCON2bits.ACQT = 5; // Allows for 12 periods (242 µs)
+    ADCON2bits.ADCS = 5; //Fosc/16 gives 2 ?s ADC clock period
+    ADCON2bits.ACQT = 5; // Allows for 12 periods (242 ?s)
     
     ADCON0bits.ADON = 1; // Enable ADC 
 }

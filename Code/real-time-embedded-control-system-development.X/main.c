@@ -8,6 +8,7 @@
 
 #include <xc.h>
 #include "lm35-temperature.h"
+#include "seven-segment-display.h"
 
 
 // Configuration settings from the Week 5 lab.
@@ -42,28 +43,29 @@ void main(void)
 
     OSCCONbits.SCS = 0; // Use the board's 8 MHz primary oscillator.
     lm35_init(); // Configure RE1/AN6 and enable the ADC.
+    sevenseg_init();
     timer2_init();
     lm35_start_sample(); // Request the first reading.
 
     while (1) {
         if (PIR1bits.TMR2IF) {
-    PIR1bits.TMR2IF = 0;       // Acknowledge this 1 ms tick.
-    elapsed_ms++;
-
-    if (elapsed_ms >= 200) {
-        elapsed_ms = 0;
-
-        if (!sample_pending) {
-            lm35_start_sample();
-            sample_pending = 1;
+            PIR1bits.TMR2IF = 0;
+            sevenseg_refresh();
+            elapsed_ms++;
+            if (elapsed_ms >= 200) {
+                elapsed_ms = 0;
+                if (!sample_pending) {
+                    lm35_start_sample();
+                    sample_pending = 1;
+                }
+            }
         }
-    }
-}
         if (sample_pending && ADCON0bits.GO == 0) {
             raw = (unsigned int)ADRESH * 256u + ADRESL;
             celsius10 = (unsigned int)
                 (((unsigned long)raw * 5000UL + 512UL) / 1024UL);
 
+            sevenseg_set_temperature(celsius10);
             sample_pending = 0;
         }
     }
