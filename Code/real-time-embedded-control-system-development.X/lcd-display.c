@@ -38,6 +38,13 @@ static void lcd_write(unsigned char value, unsigned char is_data)
     __delay_us(50);        // R/W is grounded, so use the lab's fixed delay.
 }
 
+
+/*
+ * Week 7, Task 2: use the power-up sequence to put the LCD into 4-bit mode.
+ * This matches the sequence in Wiktor's lcd_init(). Our version configures
+ * RB0-RB5 and leaves RB6-RB7 alone. The heading and second-row unit are
+ * specific to our LM35 display and are written once at startup.
+ */
 void lcd_init(void)
 {
     const char *heading = "LM35 temperature";
@@ -74,6 +81,13 @@ void lcd_init(void)
     lcd_write('C', 1);
 }
 
+
+/*
+ * Based on Week 7, Tasks 4 and 6. Wiktor's lcd_uint() and lcd_tenths()
+ * demonstrate integer formatting and displaying one decimal place.
+ * Our version prepares five characters for the next refresh. Leading
+ * spaces erase old digits, for example when 100.0 changes to 99.9.
+ */
 void lcd_set_temperature(unsigned int tenths)
 {
     // Example: 249 tenths becomes " 24.9".
@@ -87,6 +101,13 @@ void lcd_set_temperature(unsigned int tenths)
     position = 0;
 }
 
+
+/*
+ * Uses the row-addressing method from Week 7, Task 5, also shown in
+ * Wiktor's lcd_goto(). Command 0xC0 moves the cursor to the start of row 2.
+ * Our update sends one command or character per tick so the seven-segment
+ * display can keep scanning. Only the temperature field is rewritten.
+ */
 void lcd_refresh(void)
 {
     if (position == 0) {

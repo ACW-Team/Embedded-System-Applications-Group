@@ -46,7 +46,7 @@
         <platformTool>Simulator</platformTool>
         <languageToolchain>XC8</languageToolchain>
         <languageToolchainVersion>4.00</languageToolchainVersion>
-        <platform>3</platform>
+        <platform>2</platform>
       </toolsSet>
       <packs>
         <pack name="PIC18F-K_DFP" vendor="Microchip" version="1.16.308"/>
@@ -1142,7 +1142,7 @@
         <property key="user-pack-device-support" value=""/>
         <property key="wpo-lto" value="false"/>
       </XC8-config-global>
-      <item path="buttons.c" ex="false" overriding="false">
+      <item path="buttons.c" ex="true" overriding="false">
         <HI-TECH-COMP>
         </HI-TECH-COMP>
         <HI-TECH-LINK>
@@ -1152,7 +1152,7 @@
         <XC8-config-global>
         </XC8-config-global>
       </item>
-      <item path="buzzer.c" ex="false" overriding="false">
+      <item path="buzzer.c" ex="true" overriding="false">
         <HI-TECH-COMP>
         </HI-TECH-COMP>
         <HI-TECH-LINK>
@@ -1162,7 +1162,7 @@
         <XC8-config-global>
         </XC8-config-global>
       </item>
-      <item path="eeprom-cfg.c" ex="false" overriding="false">
+      <item path="eeprom-cfg.c" ex="true" overriding="false">
         <HI-TECH-COMP>
         </HI-TECH-COMP>
         <HI-TECH-LINK>
@@ -1182,7 +1182,7 @@
         <XC8-config-global>
         </XC8-config-global>
       </item>
-      <item path="rtc-clock.c" ex="false" overriding="false">
+      <item path="rtc-clock.c" ex="true" overriding="false">
         <HI-TECH-COMP>
         </HI-TECH-COMP>
         <HI-TECH-LINK>

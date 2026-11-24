@@ -6,7 +6,8 @@
 3. Privide Temperature to LCD
 4. Continuously monitor temperature without blocking other system functions.
 
-``` mermaid
+
+```mermaid
 flowchart TD
     A([Start]) --> B[Initialise ADC Module]
     B --> C[Configure RE1 / AN6 as Analogue Input]
@@ -41,6 +42,7 @@ flowchart TD
 
     Q --> G
 ```
+
 
 ```
 As the EasyPic PIC18F45K22 usese internal ADC analouge values produced, 
