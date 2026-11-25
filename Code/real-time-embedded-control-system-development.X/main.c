@@ -50,6 +50,7 @@ void main(void)
     sevenseg_init();
     lcd_init();
     timer2_init();
+    rtc_clock_init();
 
     lm35_start_sample();   // Take the first reading immediately
 
@@ -91,4 +92,6 @@ void main(void)
             sample_pending = 0;
         }
     }
+    
+    
 }

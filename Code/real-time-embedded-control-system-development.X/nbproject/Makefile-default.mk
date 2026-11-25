@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=lm35-temperature.c seven-segment-display.c lcd-display.c main.c
+SOURCEFILES_QUOTED_IF_SPACED=lm35-temperature.c seven-segment-display.c lcd-display.c rtc-clock.c main.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/lm35-temperature.p1 ${OBJECTDIR}/seven-segment-display.p1 ${OBJECTDIR}/lcd-display.p1 ${OBJECTDIR}/main.p1
-POSSIBLE_DEPFILES=${OBJECTDIR}/lm35-temperature.p1.d ${OBJECTDIR}/seven-segment-display.p1.d ${OBJECTDIR}/lcd-display.p1.d ${OBJECTDIR}/main.p1.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/lm35-temperature.p1 ${OBJECTDIR}/seven-segment-display.p1 ${OBJECTDIR}/lcd-display.p1 ${OBJECTDIR}/rtc-clock.p1 ${OBJECTDIR}/main.p1
+POSSIBLE_DEPFILES=${OBJECTDIR}/lm35-temperature.p1.d ${OBJECTDIR}/seven-segment-display.p1.d ${OBJECTDIR}/lcd-display.p1.d ${OBJECTDIR}/rtc-clock.p1.d ${OBJECTDIR}/main.p1.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/lm35-temperature.p1 ${OBJECTDIR}/seven-segment-display.p1 ${OBJECTDIR}/lcd-display.p1 ${OBJECTDIR}/main.p1
+OBJECTFILES=${OBJECTDIR}/lm35-temperature.p1 ${OBJECTDIR}/seven-segment-display.p1 ${OBJECTDIR}/lcd-display.p1 ${OBJECTDIR}/rtc-clock.p1 ${OBJECTDIR}/main.p1
 
 # Source Files
-SOURCEFILES=lm35-temperature.c seven-segment-display.c lcd-display.c main.c
+SOURCEFILES=lm35-temperature.c seven-segment-display.c lcd-display.c rtc-clock.c main.c
 
 
 
@@ -112,6 +112,14 @@ ${OBJECTDIR}/lcd-display.p1: lcd-display.c  nbproject/Makefile-${CND_CONF}.mk
 	@-${MV} ${OBJECTDIR}/lcd-display.d ${OBJECTDIR}/lcd-display.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/lcd-display.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
+${OBJECTDIR}/rtc-clock.p1: rtc-clock.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/rtc-clock.p1.d 
+	@${RM} ${OBJECTDIR}/rtc-clock.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=none   -mdfp="${DFP_DIR}/xc8"  -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/rtc-clock.p1 rtc-clock.c 
+	@-${MV} ${OBJECTDIR}/rtc-clock.d ${OBJECTDIR}/rtc-clock.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/rtc-clock.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
 ${OBJECTDIR}/main.p1: main.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/main.p1.d 
@@ -144,6 +152,14 @@ ${OBJECTDIR}/lcd-display.p1: lcd-display.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/lcd-display.p1 lcd-display.c 
 	@-${MV} ${OBJECTDIR}/lcd-display.d ${OBJECTDIR}/lcd-display.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/lcd-display.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/rtc-clock.p1: rtc-clock.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/rtc-clock.p1.d 
+	@${RM} ${OBJECTDIR}/rtc-clock.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/rtc-clock.p1 rtc-clock.c 
+	@-${MV} ${OBJECTDIR}/rtc-clock.d ${OBJECTDIR}/rtc-clock.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/rtc-clock.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 ${OBJECTDIR}/main.p1: main.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 

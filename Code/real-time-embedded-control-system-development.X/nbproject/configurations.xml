@@ -1182,7 +1182,7 @@
         <XC8-config-global>
         </XC8-config-global>
       </item>
-      <item path="rtc-clock.c" ex="true" overriding="false">
+      <item path="rtc-clock.c" ex="false" overriding="false">
         <HI-TECH-COMP>
         </HI-TECH-COMP>
         <HI-TECH-LINK>
