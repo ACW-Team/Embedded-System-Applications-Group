@@ -2,6 +2,7 @@
 #include "lm35-temperature.h"
 #include "seven-segment-display.h"
 #include "lcd-display.h"
+#include "rtc-clock.h"
 
 // EasyPIC lab setup: external 8 MHz crystal
 // Code taken and adapted from Lab 5
