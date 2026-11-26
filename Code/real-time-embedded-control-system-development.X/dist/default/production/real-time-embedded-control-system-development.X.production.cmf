@@ -1,0 +1,751 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production/real-time-embedded-control-system-development.X.production.o
+cinit CODE 0 EF0 EF0 28 1 2
+text0 CODE 0 83E 83E 140 1 2
+text1 CODE 0 F56 F56 16 1 2
+text2 CODE 0 97E 97E 120 1 2
+text3 CODE 0 E98 E98 2C 1 2
+text4 CODE 0 F6C F6C 16 1 2
+text5 CODE 0 622 622 21C 1 2
+text6 CODE 0 F3A F3A 1C 1 2
+text7 CODE 0 F82 F82 4 1 2
+text8 CODE 0 EC4 EC4 2C 1 2
+text9 CODE 0 B84 B84 E2 1 2
+text10 CODE 0 C66 C66 7C 1 2
+text11 CODE 0 DBE DBE 64 1 2
+text12 CODE 0 CE2 CE2 72 1 2
+text13 CODE 0 E22 E22 44 1 2
+text14 CODE 0 A9E A9E E6 1 2
+text15 CODE 0 E66 E66 32 1 2
+text16 CODE 0 F18 F18 22 1 2
+text17 CODE 0 D54 D54 6A 1 2
+idataCOMRAM CODE 0 F86 F86 1 1 1
+cstackCOMRAM COMRAM 1 1 1 1F 1 1
+smallconst SMALLCONST 0 600 600 22 1 2
+dataCOMRAM COMRAM 1 32 32 1 1 1
+bssCOMRAM COMRAM 1 20 20 12 1 1
+config CONFIG 4 300000 300000 8 1 1
+$/tmp/xcXDFdkiM/driver_tmp_7.o
+init CODE 0 7FFC 7FFC 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 8 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-5FF 1
+SFR F38-FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+CONST 4-5FF 1
+CONST F87-7FFB 1
+IDLOC 200000-200007 1
+SMALLCONST F87-7FFB 1
+CODE 4-5FF 1
+CODE F87-7FFB 1
+BIGRAM 33-5FF 1
+BIGSFR F38-FFF 1
+COMRAM 33-5F 1
+CONFIG 300008-30000D 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST F87-7FFB 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production/real-time-embedded-control-system-development.X.production.o
+D54 text17 CODE >15:/opt/microchip/xc8/v4.00/pic/sources/c99/common/Umul32.c
+D54 text17 CODE >119:/opt/microchip/xc8/v4.00/pic/sources/c99/common/Umul32.c
+D64 text17 CODE >121:/opt/microchip/xc8/v4.00/pic/sources/c99/common/Umul32.c
+D72 text17 CODE >122:/opt/microchip/xc8/v4.00/pic/sources/c99/common/Umul32.c
+D82 text17 CODE >123:/opt/microchip/xc8/v4.00/pic/sources/c99/common/Umul32.c
+D8C text17 CODE >124:/opt/microchip/xc8/v4.00/pic/sources/c99/common/Umul32.c
+D96 text17 CODE >125:/opt/microchip/xc8/v4.00/pic/sources/c99/common/Umul32.c
+DAC text17 CODE >128:/opt/microchip/xc8/v4.00/pic/sources/c99/common/Umul32.c
+DBC text17 CODE >129:/opt/microchip/xc8/v4.00/pic/sources/c99/common/Umul32.c
+F18 text16 CODE >18:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+F18 text16 CODE >21:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+F2A text16 CODE >22:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+F2C text16 CODE >24:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+F2E text16 CODE >25:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+F32 text16 CODE >26:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+F34 text16 CODE >27:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+F38 text16 CODE >28:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+E66 text15 CODE >30:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+E66 text15 CODE >32:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+E78 text15 CODE >33:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+E7A text15 CODE >34:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+E7E text15 CODE >35:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+E80 text15 CODE >39:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+E88 text15 CODE >40:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+E8E text15 CODE >41:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+E96 text15 CODE >42:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+A9E text14 CODE >51:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+A9E text14 CODE >53:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+AA2 text14 CODE >55:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+AA8 text14 CODE >56:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+AAC text14 CODE >57:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+AB0 text14 CODE >59:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+ABE text14 CODE >62:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+AC4 text14 CODE >63:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+AD2 text14 CODE >64:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+AD8 text14 CODE >65:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+ADE text14 CODE >66:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+AE4 text14 CODE >67:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+AEA text14 CODE >68:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+AF0 text14 CODE >69:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+AF6 text14 CODE >71:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+B00 text14 CODE >72:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+B0A text14 CODE >73:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+B14 text14 CODE >74:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+B1E text14 CODE >75:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+B2E text14 CODE >77:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+B32 text14 CODE >78:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+B48 text14 CODE >77:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+B64 text14 CODE >82:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+B6E text14 CODE >83:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+B78 text14 CODE >84:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+B82 text14 CODE >85:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+E22 text13 CODE >120:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+E22 text13 CODE >122:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+E32 text13 CODE >123:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+E3C text13 CODE >124:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+E50 text13 CODE >125:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+E62 text13 CODE >130:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+E64 text13 CODE >131:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+CE2 text12 CODE >7:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwdiv.c
+CE2 text12 CODE >13:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwdiv.c
+CE8 text12 CODE >14:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwdiv.c
+CFA text12 CODE >15:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwdiv.c
+CFE text12 CODE >16:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwdiv.c
+D02 text12 CODE >17:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwdiv.c
+D08 text12 CODE >18:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwdiv.c
+D0A text12 CODE >16:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwdiv.c
+D18 text12 CODE >21:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwdiv.c
+D1E text12 CODE >22:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwdiv.c
+D34 text12 CODE >23:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwdiv.c
+D3C text12 CODE >24:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwdiv.c
+D3E text12 CODE >26:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwdiv.c
+D44 text12 CODE >27:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwdiv.c
+D4A text12 CODE >28:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwdiv.c
+D4A text12 CODE >29:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwdiv.c
+D52 text12 CODE >30:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwdiv.c
+DBE text11 CODE >7:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwmod.c
+DBE text11 CODE >12:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwmod.c
+DD0 text11 CODE >13:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwmod.c
+DD4 text11 CODE >14:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwmod.c
+DD8 text11 CODE >15:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwmod.c
+DDE text11 CODE >16:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwmod.c
+DE0 text11 CODE >14:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwmod.c
+DEE text11 CODE >19:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwmod.c
+E04 text11 CODE >20:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwmod.c
+E0C text11 CODE >21:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwmod.c
+E12 text11 CODE >22:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwmod.c
+E18 text11 CODE >23:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwmod.c
+E18 text11 CODE >24:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwmod.c
+E20 text11 CODE >25:/opt/microchip/xc8/v4.00/pic/sources/c99/common/lwmod.c
+C66 text10 CODE >107:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+C66 text10 CODE >109:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+CA2 text10 CODE >110:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+CDC text10 CODE >111:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+CE0 text10 CODE >112:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+B84 text9 CODE >94:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+B84 text9 CODE >98:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+BC8 text9 CODE >99:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+C1C text9 CODE >100:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+C46 text9 CODE >101:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+C4A text9 CODE >102:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+C62 text9 CODE >104:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+C64 text9 CODE >105:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lcd-display.c
+EC4 text8 CODE >23:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lm35-temperature.c
+EC4 text8 CODE >24:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lm35-temperature.c
+EC6 text8 CODE >25:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lm35-temperature.c
+ECA text8 CODE >26:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lm35-temperature.c
+ED2 text8 CODE >29:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lm35-temperature.c
+ED6 text8 CODE >30:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lm35-temperature.c
+EDA text8 CODE >33:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lm35-temperature.c
+EDC text8 CODE >34:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lm35-temperature.c
+EE4 text8 CODE >35:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lm35-temperature.c
+EEC text8 CODE >37:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lm35-temperature.c
+EEE text8 CODE >38:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lm35-temperature.c
+F82 text7 CODE >45:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lm35-temperature.c
+F82 text7 CODE >47:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lm35-temperature.c
+F84 text7 CODE >48:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/lm35-temperature.c
+F3A text6 CODE >23:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+F3A text6 CODE >26:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+F3C text6 CODE >29:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+F40 text6 CODE >30:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+F42 text6 CODE >33:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+F44 text6 CODE >34:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+F46 text6 CODE >39:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+F4A text6 CODE >40:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+F4C text6 CODE >41:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+F50 text6 CODE >43:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+F54 text6 CODE >44:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+622 text5 CODE >57:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+622 text5 CODE >59:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+634 text5 CODE >60:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+63A text5 CODE >63:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+64A text5 CODE >64:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+662 text5 CODE >65:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+66A text5 CODE >66:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+66C text5 CODE >67:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+68E text5 CODE >68:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+690 text5 CODE >69:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+692 text5 CODE >70:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+694 text5 CODE >71:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+698 text5 CODE >72:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+69E text5 CODE >74:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+69E text5 CODE >76:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+6DA text5 CODE >78:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+6DE text5 CODE >79:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+6E4 text5 CODE >81:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+6E4 text5 CODE >82:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+6F6 text5 CODE >84:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+6F8 text5 CODE >85:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+6FA text5 CODE >86:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+6FE text5 CODE >88:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+702 text5 CODE >89:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+706 text5 CODE >90:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+70A text5 CODE >93:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+70A text5 CODE >94:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+718 text5 CODE >95:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+71A text5 CODE >96:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+71E text5 CODE >97:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+734 text5 CODE >98:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+736 text5 CODE >99:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+73A text5 CODE >100:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+750 text5 CODE >101:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+752 text5 CODE >102:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+756 text5 CODE >103:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+75A text5 CODE >104:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+75C text5 CODE >105:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+764 text5 CODE >109:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+768 text5 CODE >110:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+76C text5 CODE >111:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+770 text5 CODE >112:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+770 text5 CODE >113:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+774 text5 CODE >114:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+77A text5 CODE >115:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+780 text5 CODE >116:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+7AA text5 CODE >117:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+7AC text5 CODE >118:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+7AE text5 CODE >119:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+7B2 text5 CODE >120:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+7B6 text5 CODE >122:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+7B6 text5 CODE >123:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+7BC text5 CODE >126:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+7BC text5 CODE >127:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+7BE text5 CODE >128:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+7D2 text5 CODE >129:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+7DC text5 CODE >130:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+7E2 text5 CODE >86:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+7EC text5 CODE >86:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+7FA text5 CODE >86:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+802 text5 CODE >86:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+80A text5 CODE >86:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+812 text5 CODE >86:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+81A text5 CODE >86:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+822 text5 CODE >86:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+82A text5 CODE >86:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+832 text5 CODE >86:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+83C text5 CODE >136:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/rtc-clock.c
+F6C text4 CODE >20:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/seven-segment-display.c
+F6C text4 CODE >22:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/seven-segment-display.c
+F70 text4 CODE >23:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/seven-segment-display.c
+F72 text4 CODE >24:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/seven-segment-display.c
+F78 text4 CODE >25:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/seven-segment-display.c
+F7A text4 CODE >26:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/seven-segment-display.c
+F7E text4 CODE >27:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/seven-segment-display.c
+F80 text4 CODE >28:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/seven-segment-display.c
+E98 text3 CODE >47:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/seven-segment-display.c
+E98 text3 CODE >49:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/seven-segment-display.c
+E9C text3 CODE >50:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/seven-segment-display.c
+EA8 text3 CODE >51:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/seven-segment-display.c
+EBC text3 CODE >52:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/seven-segment-display.c
+EC2 text3 CODE >53:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/seven-segment-display.c
+97E text2 CODE >35:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/seven-segment-display.c
+97E text2 CODE >37:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/seven-segment-display.c
+9DE text2 CODE >38:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/seven-segment-display.c
+A3C text2 CODE >39:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/seven-segment-display.c
+A76 text2 CODE >40:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/seven-segment-display.c
+A9C text2 CODE >41:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/seven-segment-display.c
+F56 text1 CODE >22:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+F56 text1 CODE >27:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+F58 text1 CODE >28:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+F60 text1 CODE >29:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+F62 text1 CODE >30:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+F66 text1 CODE >31:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+F68 text1 CODE >32:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+F6A text1 CODE >33:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+83E text0 CODE >41:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+83E text0 CODE >48:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+842 text0 CODE >49:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+844 text0 CODE >51:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+848 text0 CODE >53:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+84C text0 CODE >54:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+850 text0 CODE >55:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+854 text0 CODE >56:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+858 text0 CODE >57:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+85C text0 CODE >59:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+860 text0 CODE >66:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+86E text0 CODE >67:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+870 text0 CODE >69:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+874 text0 CODE >70:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+878 text0 CODE >72:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+882 text0 CODE >73:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+898 text0 CODE >74:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+8B0 text0 CODE >77:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+8B2 text0 CODE >78:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+8C2 text0 CODE >79:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+8C4 text0 CODE >81:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+8D4 text0 CODE >82:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+8D8 text0 CODE >83:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+8DC text0 CODE >90:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+8FA text0 CODE >91:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+906 text0 CODE >95:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+95C text0 CODE >98:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+968 text0 CODE >99:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+974 text0 CODE >101:/home/reece/repos/Final-Year/Embedded-System-Applications-Group/Code/real-time-embedded-control-system-development.X/main.c
+EF0 cinit CODE >2814:/tmp/xcXDFdkiM/driver_tmp_1.s
+EF0 cinit CODE >2816:/tmp/xcXDFdkiM/driver_tmp_1.s
+EF0 cinit CODE >2819:/tmp/xcXDFdkiM/driver_tmp_1.s
+EF0 cinit CODE >2854:/tmp/xcXDFdkiM/driver_tmp_1.s
+EF2 cinit CODE >2855:/tmp/xcXDFdkiM/driver_tmp_1.s
+EF4 cinit CODE >2856:/tmp/xcXDFdkiM/driver_tmp_1.s
+EF6 cinit CODE >2857:/tmp/xcXDFdkiM/driver_tmp_1.s
+EF8 cinit CODE >2858:/tmp/xcXDFdkiM/driver_tmp_1.s
+EFA cinit CODE >2859:/tmp/xcXDFdkiM/driver_tmp_1.s
+EFC cinit CODE >2860:/tmp/xcXDFdkiM/driver_tmp_1.s
+EFE cinit CODE >2861:/tmp/xcXDFdkiM/driver_tmp_1.s
+F02 cinit CODE >2865:/tmp/xcXDFdkiM/driver_tmp_1.s
+F06 cinit CODE >2866:/tmp/xcXDFdkiM/driver_tmp_1.s
+F08 cinit CODE >2867:/tmp/xcXDFdkiM/driver_tmp_1.s
+F08 cinit CODE >2868:/tmp/xcXDFdkiM/driver_tmp_1.s
+F0A cinit CODE >2869:/tmp/xcXDFdkiM/driver_tmp_1.s
+F0C cinit CODE >2870:/tmp/xcXDFdkiM/driver_tmp_1.s
+F0E cinit CODE >2876:/tmp/xcXDFdkiM/driver_tmp_1.s
+F0E cinit CODE >2879:/tmp/xcXDFdkiM/driver_tmp_1.s
+F10 cinit CODE >2880:/tmp/xcXDFdkiM/driver_tmp_1.s
+F12 cinit CODE >2881:/tmp/xcXDFdkiM/driver_tmp_1.s
+F14 cinit CODE >2882:/tmp/xcXDFdkiM/driver_tmp_1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___lwmod@counter C 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hspace_0 8000 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hspace_1 33 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hspace_4 600008 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+main@seconds 1E 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production/real-time-embedded-control-system-development.X.production.o
+__mediumconst 600 0 SMALLCONST 0 smallconst dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/real-time-embedded-control-system-development.X.production.o
+_lcd_seconds C66 0 CODE 0 text10 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__L__absolute__ 0 0 ABS 0 __absolute__ dist/default/production/real-time-embedded-control-system-development.X.production.o
+_lcd_nibble F18 0 CODE 0 text16 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lsmallconst 600 0 SMALLCONST 0 smallconst dist/default/production/real-time-embedded-control-system-development.X.production.o
+_LATA F89 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+_LATB F8A 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+_LATD F8C 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+_TMR2 FBC 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+___sp 0 0 STACK 2 stack /tmp/xcXDFdkiM/driver_tmp_7.o
+_main 83E 0 CODE 0 text0 dist/default/production/real-time-embedded-control-system-development.X.production.o
+___stack_hi 0 0 STACK 2 stack /tmp/xcXDFdkiM/driver_tmp_7.o
+___stack_lo 0 0 STACK 2 stack /tmp/xcXDFdkiM/driver_tmp_7.o
+start 7FFC 0 CODE 0 init /tmp/xcXDFdkiM/driver_tmp_7.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+rtc_clock_tick@seconds 1 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+?___lmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+_wait_ticks 2E 0 COMRAM 1 bssCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hpowerup 0 0 CODE 0 powerup dist/default/production/real-time-embedded-control-system-development.X.production.o
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__end_of_lcd_write E98 0 CODE 0 text15 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__accesstop 60 0 ABS 0 - /tmp/xcXDFdkiM/driver_tmp_7.o
+intlevel0 0 0 CODE 0 text /tmp/xcXDFdkiM/driver_tmp_7.o
+intlevel1 0 0 CODE 0 text /tmp/xcXDFdkiM/driver_tmp_7.o
+intlevel2 0 0 CODE 0 text /tmp/xcXDFdkiM/driver_tmp_7.o
+intlevel3 0 0 CODE 0 text /tmp/xcXDFdkiM/driver_tmp_7.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__end_of_lcd_refresh E66 0 CODE 0 text13 dist/default/production/real-time-embedded-control-system-development.X.production.o
+_OSCCONbits FD3 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production/real-time-embedded-control-system-development.X.production.o
+lcd_nibble@value 2 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+_timer2_init F56 0 CODE 0 text1 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production/real-time-embedded-control-system-development.X.production.o
+lcd_write@value 4 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__pidataCOMRAM F86 0 CODE 0 idataCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__end_of_lcd_nibble F3A 0 CODE 0 text16 dist/default/production/real-time-embedded-control-system-development.X.production.o
+_lcd_write E66 0 CODE 0 text15 dist/default/production/real-time-embedded-control-system-development.X.production.o
+_ADRESH FC4 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+_ADRESL FC3 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+__end_of_enables 60F 0 SMALLCONST 0 smallconst dist/default/production/real-time-embedded-control-system-development.X.production.o
+_ANSELA F38 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+_ANSELB F39 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+_ANSELD F3B 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+___inthi_sp 0 0 STACK 2 stack /tmp/xcXDFdkiM/driver_tmp_7.o
+___intlo_sp 0 0 STACK 2 stack /tmp/xcXDFdkiM/driver_tmp_7.o
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production/real-time-embedded-control-system-development.X.production.o
+__end_of___lmul DBE 0 CODE 0 text17 dist/default/production/real-time-embedded-control-system-development.X.production.o
+lcd_seconds@seconds 11 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/real-time-embedded-control-system-development.X.production.o
+main@raw 18 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__end_of_lm35_init EF0 0 CODE 0 text8 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hintcodelo 18 0 CODE 0 intcodelo dist/default/production/real-time-embedded-control-system-development.X.production.o
+_lcd_seconds$261 D 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+_lcd_seconds$262 F 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+_lcd_set_temperature$257 F 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+_lcd_set_temperature$258 11 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+___lwmod@divisor A 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__end_of___lwdiv D54 0 CODE 0 text12 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__end_of___lwmod E22 0 CODE 0 text11 dist/default/production/real-time-embedded-control-system-development.X.production.o
+_lcd_set_temperature B84 0 CODE 0 text9 dist/default/production/real-time-embedded-control-system-development.X.production.o
+___lwdiv@quotient 5 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+_lm35_init EC4 0 CODE 0 text8 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+_candidate 2D 0 COMRAM 1 bssCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+___lwmod@dividend 8 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lintcodelo 18 0 CODE 0 intcodelo dist/default/production/real-time-embedded-control-system-development.X.production.o
+start_initialization EF0 0 CODE 0 cinit dist/default/production/real-time-embedded-control-system-development.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+rtc_clock_tick@ones 6 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+rtc_clock_tick@tens 5 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+_TRISCbits F94 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+_TRISEbits F96 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+_sevenseg_set_temperature$229 10 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+_sevenseg_set_temperature$230 12 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+isa$xinst 0 0 ABS 0 - /tmp/xcXDFdkiM/driver_tmp_7.o
+_sevenseg_set_temperature 97E 0 CODE 0 text2 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hidloc 0 0 ABS 0 idloc dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production/real-time-embedded-control-system-development.X.production.o
+___lwdiv@counter 7 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/production/real-time-embedded-control-system-development.X.production.o
+__smallconst 600 0 SMALLCONST 0 smallconst dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hconfig 300008 0 CONFIG 4 config dist/default/production/real-time-embedded-control-system-development.X.production.o
+__end_of_lcd_seconds CE2 0 CODE 0 text10 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lidloc 0 0 ABS 0 idloc dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production/real-time-embedded-control-system-development.X.production.o
+__end_of_lm35_start_sample F86 0 CODE 0 text7 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production/real-time-embedded-control-system-development.X.production.o
+__end_of_lcd_set_temperature C66 0 CODE 0 text9 dist/default/production/real-time-embedded-control-system-development.X.production.o
+_PORTCbits F82 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hheap 0 0 HEAP 7 heap dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hinit 8000 0 CODE 0 init dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Htemp 0 0 COMRAM 1 temp dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lheap 0 0 HEAP 7 heap dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Linit 7FFC 0 CODE 0 init dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Ltemp 0 0 COMRAM 1 temp dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production/real-time-embedded-control-system-development.X.production.o
+_dirty_clock 30 0 COMRAM 1 bssCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+_SSP1CON1 FC6 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+_SSP1CON2 FC5 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+_SSP1STAT FC7 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+___lmul D54 0 CODE 0 text17 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production/real-time-embedded-control-system-development.X.production.o
+_PR2 FBB 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+__S0 8000 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+__S1 33 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+__S4 0 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+__S5 0 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+main@elapsed_ms 1A 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production/real-time-embedded-control-system-development.X.production.o
+_lcd_init A9E 0 CODE 0 text14 dist/default/production/real-time-embedded-control-system-development.X.production.o
+main@celsius10 1B 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production/real-time-embedded-control-system-development.X.production.o
+_enables 60B 0 SMALLCONST 0 smallconst dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hramtop 600 0 RAM 0 ramtop dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production/real-time-embedded-control-system-development.X.production.o
+__end_of_timer2_init F6C 0 CODE 0 text1 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__activetblptr 2 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production/real-time-embedded-control-system-development.X.production.o
+__end_of_lcd_init B84 0 CODE 0 text14 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production/real-time-embedded-control-system-development.X.production.o
+sevenseg_set_temperature@tenths D 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+_sevenseg_init F6C 0 CODE 0 text4 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__ptext10 C66 0 CODE 0 text10 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__ptext11 DBE 0 CODE 0 text11 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__ptext12 CE2 0 CODE 0 text12 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__ptext13 E22 0 CODE 0 text13 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__ptext14 A9E 0 CODE 0 text14 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__ptext15 E66 0 CODE 0 text15 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__ptext16 F18 0 CODE 0 text16 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__ptext17 D54 0 CODE 0 text17 dist/default/production/real-time-embedded-control-system-development.X.production.o
+___lwdiv CE2 0 CODE 0 text12 dist/default/production/real-time-embedded-control-system-development.X.production.o
+___lwmod DBE 0 CODE 0 text11 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/production/real-time-embedded-control-system-development.X.production.o
+___lmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+_position$F244 32 0 COMRAM 1 dataCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production/real-time-embedded-control-system-development.X.production.o
+_lm35_start_sample F82 0 CODE 0 text7 dist/default/production/real-time-embedded-control-system-development.X.production.o
+_segments 601 0 SMALLCONST 0 smallconst dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lsivt_hi 0 0 CODE 0 sivt_hi dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lsivt_lo 18 0 CODE 0 sivt_lo dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production/real-time-embedded-control-system-development.X.production.o
+___inthi_stack_hi 0 0 STACK 2 stack /tmp/xcXDFdkiM/driver_tmp_7.o
+___inthi_stack_lo 0 0 STACK 2 stack /tmp/xcXDFdkiM/driver_tmp_7.o
+___lwdiv@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production/real-time-embedded-control-system-development.X.production.o
+isa$std 1 0 ABS 0 - /tmp/xcXDFdkiM/driver_tmp_7.o
+__end_of_segments 60B 0 SMALLCONST 0 smallconst dist/default/production/real-time-embedded-control-system-development.X.production.o
+stackhi 0 0 ABS 0 - /tmp/xcXDFdkiM/driver_tmp_7.o
+stacklo 0 0 ABS 0 - /tmp/xcXDFdkiM/driver_tmp_7.o
+__Lintcode 8 0 CODE 0 intcode dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production/real-time-embedded-control-system-development.X.production.o
+_ADCON0bits FC2 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+_ADCON1bits FC1 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+_ADCON2bits FC0 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+__pbssCOMRAM 20 0 COMRAM 1 bssCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+_PIR1bits F9E 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+_PIR2bits FA1 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+end_of_initialization F0E 0 CODE 0 cinit dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production/real-time-embedded-control-system-development.X.production.o
+lcd_init@heading 6 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+_lcd_refresh E22 0 CODE 0 text13 dist/default/production/real-time-embedded-control-system-development.X.production.o
+___lwdiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+?___lwdiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+?___lwmod 8 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lramtop 600 0 RAM 0 ramtop dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production/real-time-embedded-control-system-development.X.production.o
+__pcinit EF0 0 CODE 0 cinit dist/default/production/real-time-embedded-control-system-development.X.production.o
+__ptext0 83E 0 CODE 0 text0 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__ptext1 F56 0 CODE 0 text1 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__ptext2 97E 0 CODE 0 text2 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__ptext3 E98 0 CODE 0 text3 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__ptext4 F6C 0 CODE 0 text4 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__ptext5 622 0 CODE 0 text5 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__ptext6 F3A 0 CODE 0 text6 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__ptext7 F82 0 CODE 0 text7 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__ptext8 EC4 0 CODE 0 text8 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__ptext9 B84 0 CODE 0 text9 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__ramtop 600 0 RAM 0 ramtop /tmp/xcXDFdkiM/driver_tmp_7.o
+_sevenseg_refresh E98 0 CODE 0 text3 dist/default/production/real-time-embedded-control-system-development.X.production.o
+_clock_in_digits 2B 0 COMRAM 1 bssCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lpowerup 0 0 CODE 0 powerup dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/real-time-embedded-control-system-development.X.production.o
+lcd_write@is_data 3 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__H__absolute__ 0 0 ABS 0 __absolute__ dist/default/production/real-time-embedded-control-system-development.X.production.o
+__end_of_sevenseg_set_temperature A9E 0 CODE 0 text2 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__psmallconst 600 0 SMALLCONST 0 smallconst dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production/real-time-embedded-control-system-development.X.production.o
+___heap_hi 0 0 ABS 0 - /tmp/xcXDFdkiM/driver_tmp_7.o
+___heap_lo 0 0 ABS 0 - /tmp/xcXDFdkiM/driver_tmp_7.o
+___param_bank 0 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+___intlo_stack_hi 0 0 STACK 2 stack /tmp/xcXDFdkiM/driver_tmp_7.o
+___intlo_stack_lo 0 0 STACK 2 stack /tmp/xcXDFdkiM/driver_tmp_7.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production/real-time-embedded-control-system-development.X.production.o
+__end_of__initialization F0E 0 CODE 0 cinit dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production/real-time-embedded-control-system-development.X.production.o
+main@status 1D 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+main@sample_pending 1F 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production/real-time-embedded-control-system-development.X.production.o
+_SSP1CON1bits FC6 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+_SSP1CON2bits FC5 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+__end_of_sevenseg_init F82 0 CODE 0 text4 dist/default/production/real-time-embedded-control-system-development.X.production.o
+___lmul@product 9 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+_rtc_clock_init F3A 0 CODE 0 text6 dist/default/production/real-time-embedded-control-system-development.X.production.o
+_rtc_clock_tick 622 0 CODE 0 text5 dist/default/production/real-time-embedded-control-system-development.X.production.o
+___lmul@multiplicand 5 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+_SSP1ADD FC8 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+_SSP1BUF FC9 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+__end_of_main 97E 0 CODE 0 text0 dist/default/production/real-time-embedded-control-system-development.X.production.o
+lcd_set_temperature@tenths D 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+rtc_clock_tick@bcd 4 0 COMRAM 1 cstackCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+_T2CON FBA 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+_TRISA F92 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+_TRISB F93 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+_TRISD F95 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production/real-time-embedded-control-system-development.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production/real-time-embedded-control-system-development.X.production.o
+_field 20 0 COMRAM 1 bssCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+_frame 25 0 COMRAM 1 bssCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+_phase 2F 0 COMRAM 1 bssCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+_until_read 29 0 COMRAM 1 bssCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hsivt_hi 0 0 CODE 0 sivt_hi dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hsivt_lo 18 0 CODE 0 sivt_lo dist/default/production/real-time-embedded-control-system-development.X.production.o
+__initialization EF0 0 CODE 0 cinit dist/default/production/real-time-embedded-control-system-development.X.production.o
+__pdataCOMRAM 32 0 COMRAM 1 dataCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+_T2CONbits FBA 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production/real-time-embedded-control-system-development.X.production.o
+__end_of_sevenseg_refresh EC4 0 CODE 0 text3 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hsmallconst 622 0 SMALLCONST 0 smallconst dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production/real-time-embedded-control-system-development.X.production.o
+_ANSELCbits F3A 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+_ANSELEbits F3C 0 ABS 0 - dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/real-time-embedded-control-system-development.X.production.o
+_position 31 0 COMRAM 1 bssCOMRAM dist/default/production/real-time-embedded-control-system-development.X.production.o
+__Hintcode 8 0 CODE 0 intcode dist/default/production/real-time-embedded-control-system-development.X.production.o
+__end_of_rtc_clock_init F56 0 CODE 0 text6 dist/default/production/real-time-embedded-control-system-development.X.production.o
+__end_of_rtc_clock_tick 83E 0 CODE 0 text5 dist/default/production/real-time-embedded-control-system-development.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text5 0 622 622 965 1
+cstackCOMRAM 1 1 1 32 1
+init 0 7FFC 7FFC 4 1
+reset_vec 0 0 0 4 1
+smallconst 0 600 600 22 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

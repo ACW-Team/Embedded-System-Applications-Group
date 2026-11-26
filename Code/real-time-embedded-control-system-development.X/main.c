@@ -40,6 +40,9 @@ static void timer2_init(void)
  */
 void main(void)
 {
+    
+    unsigned char seconds;
+    rtc_results status;
     unsigned int raw;
     unsigned int celsius10;
     unsigned char sample_pending = 1;
@@ -66,6 +69,11 @@ void main(void)
             sevenseg_refresh(); // Light the next seven-segment digit
             lcd_refresh();      // Send one LCD command or character
 
+           status = rtc_clock_tick(&seconds);
+            if (status == rtc_ready) lcd_seconds(seconds);
+            if (status == rtc_error) lcd_seconds(0xffu);
+            
+            
             elapsed_ms++;
             if (elapsed_ms >= 200) {
                 elapsed_ms = 0;

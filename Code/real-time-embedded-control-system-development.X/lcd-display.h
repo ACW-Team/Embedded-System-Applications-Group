@@ -4,5 +4,5 @@
 void lcd_init(void);
 void lcd_set_temperature(unsigned int tenths);
 void lcd_refresh(void);
-
+void lcd_seconds(unsigned char seconds);
 #endif

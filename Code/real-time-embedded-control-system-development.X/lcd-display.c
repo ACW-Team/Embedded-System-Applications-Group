@@ -7,6 +7,9 @@
 #define LCD_E       0x20u  // RB5
 #define FIELD_WIDTH 5u     // Enough space for "123.4"
 
+static char clock_in_digits[2];
+static unsigned char dirty_clock;
+
 static char field[FIELD_WIDTH];
 
 // Positions 1 to 5 send characters. Position 6 means finished.
@@ -101,6 +104,12 @@ void lcd_set_temperature(unsigned int tenths)
     position = 0;
 }
 
+void lcd_seconds(unsigned char seconds)
+{
+    clock_in_digits[0] = seconds < 60u ? '0' + seconds / 10u : '-';
+    clock_in_digits[1] = seconds < 60u ? '0' + seconds % 10u : '-';
+    dirty_clock = 1;
+}
 
 /*
  * Uses the row-addressing method from Week 7, Task 5, also shown in
