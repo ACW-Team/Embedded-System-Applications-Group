@@ -93,7 +93,7 @@ void main(void)
             // Assumes a 5.0 V ADC reference. The LM35 gives 10 mV
             // per degree C, so 1 mV represents 0.1 degree C.
             celsius10 = (unsigned int)
-                (((unsigned long)raw * 5000UL + 512UL) / 1024UL);
+                (((unsigned long)raw * 3300UL + 512UL) / 1024UL);
 
             sevenseg_set_temperature(celsius10);
             lcd_set_temperature(celsius10);

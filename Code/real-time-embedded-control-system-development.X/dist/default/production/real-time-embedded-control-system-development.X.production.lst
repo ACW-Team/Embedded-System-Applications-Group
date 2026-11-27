@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V4.00 build 20260614213421 
-                                                                                               Thu Nov 26 23:15:59 2026
+                                                                                               Fri Nov 27 11:29:44 2026
 
 Microchip MPLAB XC8 C Compiler v4.00 build 20260614213421 Og1 
      1                           	processor	18F45K22
@@ -4173,7 +4173,7 @@ DATA                 0      0      50      0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V4.00 build 20260614213421 
-Symbol Table                                                                                   Thu Nov 26 23:15:59 2026
+Symbol Table                                                                                   Fri Nov 27 11:29:44 2026
 
                     ?_lcd_refresh 0001                      ?_lcd_seconds 0001                                l13 0EEE  
                               l16 0F84                                l50 0A9C                                l53 0EC2  
